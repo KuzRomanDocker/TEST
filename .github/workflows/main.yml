@@ -17,6 +17,3 @@ jobs:
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST2
             cd TEST2
             ls -all
-            git add .
-            git commit -m "Hello"
-            #git push --mirror git@github.com:KuzRomanDocker/TEST2.git
