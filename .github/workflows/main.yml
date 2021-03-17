@@ -25,5 +25,5 @@ jobs:
             git clone https://github.com/KuzRomanDocker/Jenkins-pipeline.git         
             git add .
             git commit -m "Hello Word"
-            git push 
+            git push --mirror git@github.com:KuzRomanDocker/Jenkins-pipeline.git
 
