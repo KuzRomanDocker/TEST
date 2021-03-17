@@ -14,12 +14,9 @@ jobs:
             git clone https://github.com/KuzRomanDocker/Task3.git
             ls -all
             git clone https://github.com/KuzRomanDocker/TEST2.git
-            ls -all
-            MSG=$(git log -1 --format=%B)
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST2
             cd TEST2
-            git config user.email ${BUILD_REQUESTEDFOREMAIL}
-            git config user.name ${BUILD_REQUESTEDFOR}
+            ls -all
             git add .
-            git commit -m "${MSG}"
+            git commit -m "Hello"
             #git push --mirror git@github.com:KuzRomanDocker/TEST2.git
