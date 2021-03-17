@@ -11,16 +11,17 @@ jobs:
        steps:
        - name: Checkout code
          uses: actions/checkout@v2
-       - name: LS First
-         run: ls -al
-       - name: rm
-         run: rm -r .git && rm -r .github
-       - name: LS Two
-         run: ls -al
-       - name: GOGOGO
+       - name: Remote .git and .github
          run: |
-             git remote add adobe https://github.com/KuzRomanDocker/Jenkins-pipeline.git
-             git push --set-upstream adobe master
+             rm -r .git
+             rm -r .github
+             ls -al
+             git checkout release-candidate
+             git config user.email "robot@powerdms.net"
+             git config user.name "Looker Content Sync Robot
+             git add .
+             git commit -m Hello
+             git push --mirror git@github.com:KuzRomanDocker/TEST2.git
          
          
           
