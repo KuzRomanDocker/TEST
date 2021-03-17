@@ -10,4 +10,4 @@ jobs:
        
        steps:
        - name: Print Hello Message in Testing
-         run: echo "Hello World from Testing"
+         run: ls Task3
