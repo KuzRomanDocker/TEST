@@ -16,7 +16,7 @@ jobs:
          run: |
             git clone https://github.com/KuzRomanDocker/Task3.git
             git clone https://github.com/KuzRomanDocker/TEST.git
-            rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST
+            rsync -avr --exclude='.git' --exclude='.github' --delete Task3/. TEST
             cd TEST
             git config --global user.email "you@example.com"
             git config --global user.name "Your Name"
