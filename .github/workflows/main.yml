@@ -9,13 +9,14 @@ jobs:
        runs-on: ubuntu-latest
        
        steps:
-       - uses: actions/checkout@v2
-       - name: rsync deployments
+       - name: Checkout code
+         uses: actions/checkout@v2
+       - name: LS First
          run: ls -al
-       - name: ls remote
-         run: ls https://github.com/KuzRomanDocker/Jenkins-pipeline/
-         #uses: burnett01/rsync-deployments@4.1
-         #with: 
-         # switches: -avzr --delete --exclude='.git' --exclude='.github'
-         # path: src/
+       - name: rm
+         run: rm -rf .git
+       - name: LS First
+         run: ls -al
+         
           
+
