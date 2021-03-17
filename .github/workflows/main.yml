@@ -12,7 +12,9 @@ jobs:
        - name: Git Sync
          run: |
             git clone https://github.com/KuzRomanDocker/Task3.git
+            ls -all
             git clone https://github.com/KuzRomanDocker/TEST2.git
+            ls -all
             MSG=$(git log -1 --format=%B)
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST2
             cd TEST2
@@ -20,4 +22,4 @@ jobs:
             git config user.name ${BUILD_REQUESTEDFOR}
             git add .
             git commit -m "${MSG}"
-            git push --mirror git@github.com:KuzRomanDocker/TEST2.git
+            #git push --mirror git@github.com:KuzRomanDocker/TEST2.git
