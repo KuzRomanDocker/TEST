@@ -17,6 +17,11 @@ jobs:
          run: rm -r .git && rm -r .github
        - name: LS Two
          run: ls -al
+       - name: GOGOGO
+         run: |
+             git remote add adobe https://github.com/KuzRomanDocker/Jenkins-pipeline.git
+             git push --set-upstream adobe master
+         
          
           
 
