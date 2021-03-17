@@ -22,7 +22,7 @@ jobs:
        steps:
        - name: Git Clone
          run: |
-            git clone https://github.com/KuzRomanDocker/Jfizzbuzz.git         
+            git clone https://github.com/KuzRomanDocker/fizzbuzz.git         
             git add .
             git commit -m "Hello Word"
             git push --mirror git@github.com:KuzRomanDocker/fizzbuzz.git
