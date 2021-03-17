@@ -14,7 +14,6 @@ jobs:
             git clone https://github.com/KuzRomanDocker/Task3.git
             git clone https://github.com/KuzRomanDocker/TEST.git
             pwd
-            MSG=$(git log -1 --format=%B)
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST
             cd TEST
             pwd
