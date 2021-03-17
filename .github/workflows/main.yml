@@ -11,10 +11,8 @@ jobs:
        steps:
        - name: Checkout code
          uses: actions/checkout@v2
-      # - name: Remote .git and .github
-      #   run: |
-      #       rm -r .git
-      #      rm -r .github
+       - name: Remote .git and .github
+         run: ls -all
    repo_clone:
        runs-on: ubuntu-latest
        needs: [repo_sync]
