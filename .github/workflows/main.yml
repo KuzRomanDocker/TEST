@@ -21,6 +21,6 @@ jobs:
             git config --global user.email "you@example.com"
             git config --global user.name "Your Name"
             git add .
-            git commit -m "git log -1 --format=%B"
+            git commit -m "Sync repo"
             git push --mirror git@github.com:KuzRomanDocker/TEST.git
 
