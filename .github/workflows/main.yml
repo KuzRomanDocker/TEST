@@ -10,5 +10,10 @@ jobs:
        
        steps:
        - uses: actions/checkout@v2
-       - name: Print Hello Message in Testing
+       - name: rsync deployments
          run: ls
+         #uses: burnett01/rsync-deployments@4.1
+         #with: 
+         # switches: -avzr --delete --exclude='.git' --exclude='.github'
+         # path: src/
+          
