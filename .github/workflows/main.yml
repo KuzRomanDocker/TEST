@@ -16,6 +16,7 @@ jobs:
              rm -r .git
              rm -r .github
              ls -al
+       - name: Git Clone
              git clone https://github.com/KuzRomanDocker/TEST2.git
              ls -al
          
