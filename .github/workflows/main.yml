@@ -13,7 +13,7 @@ jobs:
          run: |
             git clone https://github.com/KuzRomanDocker/Task3.git
             ls -all
-            git clone https://github.com/KuzRomanDocker/TEST2.git
-            rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST2
-            cd TEST2
+            git clone https://github.com/KuzRomanDocker/TEST.git
+            rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST
+            cd TEST
             ls -all
