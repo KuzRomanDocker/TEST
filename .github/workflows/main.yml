@@ -14,7 +14,7 @@ jobs:
        - name: LS First
          run: ls -al
        - name: rm
-         run: rm -rf .git
+         run: rm -r .git && rm -r .github
        - name: LS Two
          run: ls -al
          
