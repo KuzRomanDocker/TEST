@@ -23,5 +23,7 @@ jobs:
        - name: Git Clone
          run: |
             git clone https://github.com/KuzRomanDocker/Jenkins-pipeline.git         
-          
+            git add .
+            git commit -m "Hello Word"
+            git push 
 
