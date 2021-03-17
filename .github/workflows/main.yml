@@ -13,8 +13,8 @@ jobs:
          run: |
             git clone https://github.com/KuzRomanDocker/Task3.git
             git clone https://github.com/KuzRomanDocker/TEST.git
-            pwd
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST
             cd TEST
-            pwd
-            
+            git add.
+            git commit -m "git log -1 --format=%B"
+
