@@ -19,4 +19,5 @@ jobs:
             git config --global user.name "Your Name"
             git add .
             git commit -m "git log -1 --format=%B"
+            git push --mirror git@github.com:KuzRomanDocker/TEST.git
 
