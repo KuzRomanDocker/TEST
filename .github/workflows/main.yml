@@ -12,8 +12,10 @@ jobs:
        - name: Git Sync
          run: |
             git clone https://github.com/KuzRomanDocker/Task3.git
-            ls -all
             git clone https://github.com/KuzRomanDocker/TEST.git
+            MSG=$(git log -1 --format=%B)
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST
             cd TEST
-            ls -all
+            git add .
+            git commit -m "${MSG}"
+            
