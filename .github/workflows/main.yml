@@ -15,7 +15,6 @@ jobs:
          run: |
              rm -r .git
              rm -r .github
-             ls -al
    repo_clone:
        runs-on: ubuntu-latest
        needs: [repo_sync]
@@ -23,8 +22,6 @@ jobs:
        steps:
        - name: Git Clone
          run: |
-            git clone https://github.com/KuzRomanDocker/TEST2.git
-            ls -al
-         
+            git clone https://github.com/KuzRomanDocker/Jenkins-pipeline.git         
           
 
