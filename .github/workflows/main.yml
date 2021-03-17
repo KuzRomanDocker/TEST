@@ -15,6 +15,6 @@ jobs:
             git clone https://github.com/KuzRomanDocker/TEST.git
             rsync -avr --exclude='.git' --exclude='.github' --exclude='Jenkinsfile' --delete Task3/. TEST
             cd TEST
-            git add.
+            git add .
             git commit -m "git log -1 --format=%B"
 
